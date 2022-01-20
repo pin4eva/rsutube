@@ -1,0 +1,19 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node src",
+        "dev": "nodemon -r esm src"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "express": "^4.17.2",
+        "mongoose": "^6.1.7"
+    },
+    "devDependencies": {
+        "eslint": "^8.7.0",
+        "esm": "^3.2.25"
+    }
+}
