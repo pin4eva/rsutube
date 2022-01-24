@@ -1,6 +1,7 @@
 import FrontLayout from "layouts/FrontLayout";
 import HomePage from "pages";
 import LoginPage from "pages/LoginPage";
+import SingleVideoPage from "pages/[slug]";
 import {
 	BrowserRouter as Router,
 	Redirect,
@@ -62,6 +63,14 @@ const Routes = () => {
 					proctected={false}
 					isAuth={false}
 					component={HomePage}
+					layout={FrontLayout}
+				/>
+				<AppRoute
+					path="/video/:slug"
+					exact
+					proctected={false}
+					isAuth={false}
+					component={SingleVideoPage}
 					layout={FrontLayout}
 				/>
 				<AppRoute

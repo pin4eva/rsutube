@@ -1,21 +1,17 @@
 import { IBlueVideo } from "components/BlueVideoComp";
-
-import VideoLayout from "layouts/VideoLayout";
 import { Fragment } from "react";
 import styled from "styled-components";
 
-const VideoPageItem = ({ video }: { video: IBlueVideo }) => {
-  return (
-    <Fragment>
-      <VideoLayout>
-        <Wrapper>
-            <h1>slug</h1>
-        </Wrapper>
-      </VideoLayout>
-    </Fragment>
-  );
+const SingleVideoPage = ({ video }: { video: IBlueVideo }) => {
+	return (
+		<Fragment>
+			<Wrapper>
+				<h1>slug</h1>
+			</Wrapper>
+		</Fragment>
+	);
 };
 
-export default VideoPageItem;
+export default SingleVideoPage;
 
 const Wrapper = styled.div``;
