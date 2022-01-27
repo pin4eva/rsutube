@@ -1,25 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { IBlueVideo } from "interface/video.interface";
 
-export interface IBlueVideo {
-	image1: string;
-	image2: string;
-	desc: string;
-	slug: string;
-}
+
 
 const VideoComp = ({ video }: { video: IBlueVideo }) => {
 	return (
 		<Wrapper>
 			<div className="container  ">
 				<div className="video-wrapper ">
-					<img className="mt-4" src={video?.image1} alt="" />
+					<img className="mt-4" src={video?.thumbnail} alt="" />
 					<div className="video-image d-flex mx-1 mt-3">
-						<img src={video?.image2} className="img-fluid" alt="" />
+						<img src={video?.user} className="img-fluid" alt="" />
 
-						<Link className="link" to={video.slug}>
-							<p className="">{video?.desc}</p>
+						<Link className="link text-decoration-none link-dark" to={video.slug}>
+							<p className=" ">{video?.title}</p>
 						</Link>
 					</div>
 

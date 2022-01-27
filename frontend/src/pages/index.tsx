@@ -1,4 +1,5 @@
-import BlueVideoComp, { IBlueVideo } from "components/BlueVideoComp";
+import BlueVideoComp  from "components/BlueVideoComp";
+import { IBlueVideo } from "interface/video.interface";
 import React, { Fragment } from "react";
 import styled from "styled-components";
 
@@ -22,6 +23,10 @@ const HomePage = () => {
 						<BlueVideoComp video={video} key={i} />
 					))} */}
 
+					<BlueVideoComp video={videos[0]} />
+					<BlueVideoComp video={videos[0]} />
+					<BlueVideoComp video={videos[0]} />
+					<BlueVideoComp video={videos[0]} />
 					<BlueVideoComp video={videos[0]} />
 					<BlueVideoComp video={videos[0]} />
 					<BlueVideoComp video={videos[0]} />
@@ -59,6 +64,7 @@ const Wrapper = styled.div`
 		flex-wrap: wrap;
 		@media screen and (max-width: 1000px) {
 			flex-direction: column;
+			width: 100%;
 		}
 	}
 `;
@@ -92,75 +98,11 @@ const navItems = [
 
 const videos: IBlueVideo[] = [
 	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
+		thumbnail: "/image 3.png",
+		user: "/unsplash_mEZ3PoFGs_k.png",
+		title: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
+		desc:  "Data analytics has been rapidly growing, with companies looking to generate insights and drive. Data analytics has been rapidly growing, with companies looking to generate insights and drive",
 		slug: "/video/my-first-post",
 	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/video/my-second-post",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/video/post-title-3",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/video/post-title-4",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/video/post-title-5",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/pages/[slug].tsx",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/pages/[slug].tsx",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/pages/[slug].tsx",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/pages/[slug].tsx",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/pages/[slug].tsx",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/pages/[slug].tsx",
-	},
-	{
-		image1: "/image 3.png",
-		image2: "/unsplash_mEZ3PoFGs_k.png",
-		desc: "Data Analytics Course 2022 | Data Analytics For Beginners | Data...",
-		slug: "/pages/[slug].tsx",
-	},
+	
 ];
